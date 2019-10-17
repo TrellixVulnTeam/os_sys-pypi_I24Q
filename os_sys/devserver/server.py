@@ -161,8 +161,13 @@ def is_port_use(port):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         return s.connect_ex(('localhost', port)) == 0
 def run_(port=8082, host='127.0.0.1', *_files):
+    """choise a port and host to start the server on. if port and host are None the port will be 8082 and the host 127.0.0.1 and the url will be 127.0.0.1:8082"""
     _f = list(_files)
     files = {}
+    if port == None:
+        port=8082
+    if host == None:
+        host='127.0.0.1'
     for item in _f:
         try:
             files[item[0]] = item[1]
@@ -174,7 +179,7 @@ def run_(port=8082, host='127.0.0.1', *_files):
     if __name__ == 'gfhdsuyvsdjhkjgsfsgbhgdfk':
         return
     else:
-        HOST,PORT = '127.0.0.1',port
+        HOST,PORT = host,port
         my_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
         my_socket.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1)
         my_socket.bind((HOST,PORT))
@@ -283,9 +288,9 @@ def run_(port=8082, host='127.0.0.1', *_files):
                         file.write(str(response).encode('utf-8'))
                     try:
                         if windows:
-                            proc = subprocess.Popen(r"%s\os_sys\devserver\core\php\php script.php" % gpl(), shell=True, stdout=subprocess.PIPE)
+                            proc = subprocess.Popen(r"%s\php\php script.php" % gpl(), shell=True, stdout=subprocess.PIPE)
                         else:
-                            proc = subprocess.Popen(r"%s\os_sys\devserver\core\php_osx\php\main\php script.php" % gpl(), shell=True, stdout=subprocess.PIPE)
+                            proc = subprocess.Popen(r"%s\php_osx\php\main\php script.php" % gpl(), shell=True, stdout=subprocess.PIPE)
                         a = proc.stdout.read().decode('utf-8')
                     except Exception as ex:
                         codet = 500
@@ -343,3 +348,4 @@ def run_(port=8082, host='127.0.0.1', *_files):
         host = HOST
         type_req = string_list[0]
         print('[%s] - method: %s - client request: %s - on: %s:%s - status: %s' % (stamp, type_req, file, host, str(port), str(code)))
+server = run_

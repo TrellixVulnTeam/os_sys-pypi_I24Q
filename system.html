@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module system</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>system</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cmatthijs%5Cappdata%5Clocal%5Cprograms%5Cpython%5Cpython37%5Clib%5Csystem.py">c:\users\matthijs\appdata\local\programs\python\python37\lib\system.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="time.html">time</a><br>
+<a href="os.html">os</a><br>
+<a href="socket.html">socket</a><br>
+</td><td width="25%" valign=top><a href="socket.html">socket</a><br>
+<a href="subprocess.html">subprocess</a><br>
+<a href="subprocess.html">subprocess</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+<a href="time.html">time</a><br>
+<a href="tkinter.html">tkinter</a><br>
+</td><td width="25%" valign=top><a href="wifi.html">wifi</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="system.html#ColorPrint">ColorPrint</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ColorPrint">class <strong>ColorPrint</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Static methods defined here:<br>
+<dl><dt><a name="ColorPrint-print_bold"><strong>print_bold</strong></a>(message, end='\n')</dt></dl>
+
+<dl><dt><a name="ColorPrint-print_fail"><strong>print_fail</strong></a>(message, end='\n')</dt></dl>
+
+<dl><dt><a name="ColorPrint-print_info"><strong>print_info</strong></a>(message, end='\n')</dt></dl>
+
+<dl><dt><a name="ColorPrint-print_pass"><strong>print_pass</strong></a>(message, end='\n')</dt></dl>
+
+<dl><dt><a name="ColorPrint-print_warn"><strong>print_warn</strong></a>(message, end='\n')</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-asctime"><strong>asctime</strong></a>(...)</dt><dd><tt><a href="#-asctime">asctime</a>([tuple])&nbsp;-&gt;&nbsp;string<br>
+&nbsp;<br>
+Convert&nbsp;a&nbsp;time&nbsp;tuple&nbsp;to&nbsp;a&nbsp;string,&nbsp;e.g.&nbsp;'Sat&nbsp;Jun&nbsp;06&nbsp;16:26:11&nbsp;1998'.<br>
+When&nbsp;the&nbsp;time&nbsp;tuple&nbsp;is&nbsp;not&nbsp;present,&nbsp;current&nbsp;time&nbsp;as&nbsp;returned&nbsp;by&nbsp;<a href="#-localtime">localtime</a>()<br>
+is&nbsp;used.</tt></dd></dl>
+ <dl><dt><a name="-clock"><strong>clock</strong></a>(...)</dt><dd><tt><a href="#-clock">clock</a>()&nbsp;-&gt;&nbsp;floating&nbsp;point&nbsp;number<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;CPU&nbsp;time&nbsp;or&nbsp;real&nbsp;time&nbsp;since&nbsp;the&nbsp;start&nbsp;of&nbsp;the&nbsp;process&nbsp;or&nbsp;since<br>
+the&nbsp;first&nbsp;call&nbsp;to&nbsp;<a href="#-clock">clock</a>().&nbsp;&nbsp;This&nbsp;has&nbsp;as&nbsp;much&nbsp;precision&nbsp;as&nbsp;the&nbsp;system<br>
+records.</tt></dd></dl>
+ <dl><dt><a name="-cmd"><strong>cmd</strong></a>(command)</dt></dl>
+ <dl><dt><a name="-cmd_filter_haak"><strong>cmd_filter_haak</strong></a>(op)</dt></dl>
+ <dl><dt><a name="-cmd_out"><strong>cmd_out</strong></a>(command_or_data)</dt></dl>
+ <dl><dt><a name="-cmd_out_list"><strong>cmd_out_list</strong></a>(command_or_data)</dt></dl>
+ <dl><dt><a name="-ctime"><strong>ctime</strong></a>(...)</dt><dd><tt><a href="#-ctime">ctime</a>(seconds)&nbsp;-&gt;&nbsp;string<br>
+&nbsp;<br>
+Convert&nbsp;a&nbsp;time&nbsp;in&nbsp;seconds&nbsp;since&nbsp;the&nbsp;Epoch&nbsp;to&nbsp;a&nbsp;string&nbsp;in&nbsp;local&nbsp;time.<br>
+This&nbsp;is&nbsp;equivalent&nbsp;to&nbsp;<a href="#-asctime">asctime</a>(<a href="#-localtime">localtime</a>(seconds)).&nbsp;When&nbsp;the&nbsp;time&nbsp;tuple&nbsp;is<br>
+not&nbsp;present,&nbsp;current&nbsp;time&nbsp;as&nbsp;returned&nbsp;by&nbsp;<a href="#-localtime">localtime</a>()&nbsp;is&nbsp;used.</tt></dd></dl>
+ <dl><dt><a name="-data"><strong>data</strong></a>()</dt></dl>
+ <dl><dt><a name="-filter_regel"><strong>filter_regel</strong></a>(zinig)</dt></dl>
+ <dl><dt><a name="-filter_zin"><strong>filter_zin</strong></a>(zine)</dt></dl>
+ <dl><dt><a name="-get_clock_info"><strong>get_clock_info</strong></a>(...)</dt><dd><tt><a href="#-get_clock_info">get_clock_info</a>(name:&nbsp;str)&nbsp;-&gt;&nbsp;dict<br>
+&nbsp;<br>
+Get&nbsp;information&nbsp;of&nbsp;the&nbsp;specified&nbsp;clock.</tt></dd></dl>
+ <dl><dt><a name="-gmtime"><strong>gmtime</strong></a>(...)</dt><dd><tt><a href="#-gmtime">gmtime</a>([seconds])&nbsp;-&gt;&nbsp;(tm_year,&nbsp;tm_mon,&nbsp;tm_mday,&nbsp;tm_hour,&nbsp;tm_min,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tm_sec,&nbsp;tm_wday,&nbsp;tm_yday,&nbsp;tm_isdst)<br>
+&nbsp;<br>
+Convert&nbsp;seconds&nbsp;since&nbsp;the&nbsp;Epoch&nbsp;to&nbsp;a&nbsp;time&nbsp;tuple&nbsp;expressing&nbsp;UTC&nbsp;(a.k.a.<br>
+GMT).&nbsp;&nbsp;When&nbsp;'seconds'&nbsp;is&nbsp;not&nbsp;passed&nbsp;in,&nbsp;convert&nbsp;the&nbsp;current&nbsp;time&nbsp;instead.<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;platform&nbsp;supports&nbsp;the&nbsp;tm_gmtoff&nbsp;and&nbsp;tm_zone,&nbsp;they&nbsp;are&nbsp;available&nbsp;as<br>
+attributes&nbsp;only.</tt></dd></dl>
+ <dl><dt><a name="-info"><strong>info</strong></a>(function)</dt></dl>
+ <dl><dt><a name="-info_o"><strong>info_o</strong></a>(function)</dt></dl>
+ <dl><dt><a name="-localtime"><strong>localtime</strong></a>(...)</dt><dd><tt><a href="#-localtime">localtime</a>([seconds])&nbsp;-&gt;&nbsp;(tm_year,tm_mon,tm_mday,tm_hour,tm_min,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tm_sec,tm_wday,tm_yday,tm_isdst)<br>
+&nbsp;<br>
+Convert&nbsp;seconds&nbsp;since&nbsp;the&nbsp;Epoch&nbsp;to&nbsp;a&nbsp;time&nbsp;tuple&nbsp;expressing&nbsp;local&nbsp;time.<br>
+When&nbsp;'seconds'&nbsp;is&nbsp;not&nbsp;passed&nbsp;in,&nbsp;convert&nbsp;the&nbsp;current&nbsp;time&nbsp;instead.</tt></dd></dl>
+ <dl><dt><a name="-mktime"><strong>mktime</strong></a>(...)</dt><dd><tt><a href="#-mktime">mktime</a>(tuple)&nbsp;-&gt;&nbsp;floating&nbsp;point&nbsp;number<br>
+&nbsp;<br>
+Convert&nbsp;a&nbsp;time&nbsp;tuple&nbsp;in&nbsp;local&nbsp;time&nbsp;to&nbsp;seconds&nbsp;since&nbsp;the&nbsp;Epoch.<br>
+Note&nbsp;that&nbsp;<a href="#-mktime">mktime</a>(<a href="#-gmtime">gmtime</a>(0))&nbsp;will&nbsp;not&nbsp;generally&nbsp;return&nbsp;zero&nbsp;for&nbsp;most<br>
+time&nbsp;zones;&nbsp;instead&nbsp;the&nbsp;returned&nbsp;value&nbsp;will&nbsp;either&nbsp;be&nbsp;equal&nbsp;to&nbsp;that<br>
+of&nbsp;the&nbsp;timezone&nbsp;or&nbsp;altzone&nbsp;attributes&nbsp;on&nbsp;the&nbsp;time&nbsp;module.</tt></dd></dl>
+ <dl><dt><a name="-monotonic"><strong>monotonic</strong></a>(...)</dt><dd><tt><a href="#-monotonic">monotonic</a>()&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Monotonic&nbsp;clock,&nbsp;cannot&nbsp;go&nbsp;backward.</tt></dd></dl>
+ <dl><dt><a name="-monotonic_ns"><strong>monotonic_ns</strong></a>(...)</dt><dd><tt><a href="#-monotonic_ns">monotonic_ns</a>()&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Monotonic&nbsp;clock,&nbsp;cannot&nbsp;go&nbsp;backward,&nbsp;as&nbsp;nanoseconds.</tt></dd></dl>
+ <dl><dt><a name="-perf_counter"><strong>perf_counter</strong></a>(...)</dt><dd><tt><a href="#-perf_counter">perf_counter</a>()&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Performance&nbsp;counter&nbsp;for&nbsp;benchmarking.</tt></dd></dl>
+ <dl><dt><a name="-perf_counter_ns"><strong>perf_counter_ns</strong></a>(...)</dt><dd><tt><a href="#-perf_counter_ns">perf_counter_ns</a>()&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Performance&nbsp;counter&nbsp;for&nbsp;benchmarking&nbsp;as&nbsp;nanoseconds.</tt></dd></dl>
+ <dl><dt><a name="-process_time"><strong>process_time</strong></a>(...)</dt><dd><tt><a href="#-process_time">process_time</a>()&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Process&nbsp;time&nbsp;for&nbsp;profiling:&nbsp;sum&nbsp;of&nbsp;the&nbsp;kernel&nbsp;and&nbsp;user-space&nbsp;CPU&nbsp;time.</tt></dd></dl>
+ <dl><dt><a name="-process_time_ns"><strong>process_time_ns</strong></a>(...)</dt><dd><tt><a href="#-process_time">process_time</a>()&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Process&nbsp;time&nbsp;for&nbsp;profiling&nbsp;as&nbsp;nanoseconds:<br>
+sum&nbsp;of&nbsp;the&nbsp;kernel&nbsp;and&nbsp;user-space&nbsp;CPU&nbsp;time.</tt></dd></dl>
+ <dl><dt><a name="-sleep"><strong>sleep</strong></a>(...)</dt><dd><tt><a href="#-sleep">sleep</a>(seconds)<br>
+&nbsp;<br>
+Delay&nbsp;execution&nbsp;for&nbsp;a&nbsp;given&nbsp;number&nbsp;of&nbsp;seconds.&nbsp;&nbsp;The&nbsp;argument&nbsp;may&nbsp;be<br>
+a&nbsp;floating&nbsp;point&nbsp;number&nbsp;for&nbsp;subsecond&nbsp;precision.</tt></dd></dl>
+ <dl><dt><a name="-strftime"><strong>strftime</strong></a>(...)</dt><dd><tt><a href="#-strftime">strftime</a>(format[,&nbsp;tuple])&nbsp;-&gt;&nbsp;string<br>
+&nbsp;<br>
+Convert&nbsp;a&nbsp;time&nbsp;tuple&nbsp;to&nbsp;a&nbsp;string&nbsp;according&nbsp;to&nbsp;a&nbsp;format&nbsp;specification.<br>
+See&nbsp;the&nbsp;library&nbsp;reference&nbsp;manual&nbsp;for&nbsp;formatting&nbsp;codes.&nbsp;When&nbsp;the&nbsp;time&nbsp;tuple<br>
+is&nbsp;not&nbsp;present,&nbsp;current&nbsp;time&nbsp;as&nbsp;returned&nbsp;by&nbsp;<a href="#-localtime">localtime</a>()&nbsp;is&nbsp;used.<br>
+&nbsp;<br>
+Commonly&nbsp;used&nbsp;format&nbsp;codes:<br>
+&nbsp;<br>
+%Y&nbsp;&nbsp;Year&nbsp;with&nbsp;century&nbsp;as&nbsp;a&nbsp;decimal&nbsp;number.<br>
+%m&nbsp;&nbsp;Month&nbsp;as&nbsp;a&nbsp;decimal&nbsp;number&nbsp;[01,12].<br>
+%d&nbsp;&nbsp;Day&nbsp;of&nbsp;the&nbsp;month&nbsp;as&nbsp;a&nbsp;decimal&nbsp;number&nbsp;[01,31].<br>
+%H&nbsp;&nbsp;Hour&nbsp;(24-hour&nbsp;clock)&nbsp;as&nbsp;a&nbsp;decimal&nbsp;number&nbsp;[00,23].<br>
+%M&nbsp;&nbsp;Minute&nbsp;as&nbsp;a&nbsp;decimal&nbsp;number&nbsp;[00,59].<br>
+%S&nbsp;&nbsp;Second&nbsp;as&nbsp;a&nbsp;decimal&nbsp;number&nbsp;[00,61].<br>
+%z&nbsp;&nbsp;Time&nbsp;zone&nbsp;offset&nbsp;from&nbsp;UTC.<br>
+%a&nbsp;&nbsp;Locale's&nbsp;abbreviated&nbsp;weekday&nbsp;name.<br>
+%A&nbsp;&nbsp;Locale's&nbsp;full&nbsp;weekday&nbsp;name.<br>
+%b&nbsp;&nbsp;Locale's&nbsp;abbreviated&nbsp;month&nbsp;name.<br>
+%B&nbsp;&nbsp;Locale's&nbsp;full&nbsp;month&nbsp;name.<br>
+%c&nbsp;&nbsp;Locale's&nbsp;appropriate&nbsp;date&nbsp;and&nbsp;time&nbsp;representation.<br>
+%I&nbsp;&nbsp;Hour&nbsp;(12-hour&nbsp;clock)&nbsp;as&nbsp;a&nbsp;decimal&nbsp;number&nbsp;[01,12].<br>
+%p&nbsp;&nbsp;Locale's&nbsp;equivalent&nbsp;of&nbsp;either&nbsp;AM&nbsp;or&nbsp;PM.<br>
+&nbsp;<br>
+Other&nbsp;codes&nbsp;may&nbsp;be&nbsp;available&nbsp;on&nbsp;your&nbsp;platform.&nbsp;&nbsp;See&nbsp;documentation&nbsp;for<br>
+the&nbsp;C&nbsp;library&nbsp;strftime&nbsp;function.</tt></dd></dl>
+ <dl><dt><a name="-strptime"><strong>strptime</strong></a>(...)</dt><dd><tt><a href="#-strptime">strptime</a>(string,&nbsp;format)&nbsp;-&gt;&nbsp;struct_time<br>
+&nbsp;<br>
+Parse&nbsp;a&nbsp;string&nbsp;to&nbsp;a&nbsp;time&nbsp;tuple&nbsp;according&nbsp;to&nbsp;a&nbsp;format&nbsp;specification.<br>
+See&nbsp;the&nbsp;library&nbsp;reference&nbsp;manual&nbsp;for&nbsp;formatting&nbsp;codes&nbsp;(same&nbsp;as<br>
+<a href="#-strftime">strftime</a>()).<br>
+&nbsp;<br>
+Commonly&nbsp;used&nbsp;format&nbsp;codes:<br>
+&nbsp;<br>
+%Y&nbsp;&nbsp;Year&nbsp;with&nbsp;century&nbsp;as&nbsp;a&nbsp;decimal&nbsp;number.<br>
+%m&nbsp;&nbsp;Month&nbsp;as&nbsp;a&nbsp;decimal&nbsp;number&nbsp;[01,12].<br>
+%d&nbsp;&nbsp;Day&nbsp;of&nbsp;the&nbsp;month&nbsp;as&nbsp;a&nbsp;decimal&nbsp;number&nbsp;[01,31].<br>
+%H&nbsp;&nbsp;Hour&nbsp;(24-hour&nbsp;clock)&nbsp;as&nbsp;a&nbsp;decimal&nbsp;number&nbsp;[00,23].<br>
+%M&nbsp;&nbsp;Minute&nbsp;as&nbsp;a&nbsp;decimal&nbsp;number&nbsp;[00,59].<br>
+%S&nbsp;&nbsp;Second&nbsp;as&nbsp;a&nbsp;decimal&nbsp;number&nbsp;[00,61].<br>
+%z&nbsp;&nbsp;Time&nbsp;zone&nbsp;offset&nbsp;from&nbsp;UTC.<br>
+%a&nbsp;&nbsp;Locale's&nbsp;abbreviated&nbsp;weekday&nbsp;name.<br>
+%A&nbsp;&nbsp;Locale's&nbsp;full&nbsp;weekday&nbsp;name.<br>
+%b&nbsp;&nbsp;Locale's&nbsp;abbreviated&nbsp;month&nbsp;name.<br>
+%B&nbsp;&nbsp;Locale's&nbsp;full&nbsp;month&nbsp;name.<br>
+%c&nbsp;&nbsp;Locale's&nbsp;appropriate&nbsp;date&nbsp;and&nbsp;time&nbsp;representation.<br>
+%I&nbsp;&nbsp;Hour&nbsp;(12-hour&nbsp;clock)&nbsp;as&nbsp;a&nbsp;decimal&nbsp;number&nbsp;[01,12].<br>
+%p&nbsp;&nbsp;Locale's&nbsp;equivalent&nbsp;of&nbsp;either&nbsp;AM&nbsp;or&nbsp;PM.<br>
+&nbsp;<br>
+Other&nbsp;codes&nbsp;may&nbsp;be&nbsp;available&nbsp;on&nbsp;your&nbsp;platform.&nbsp;&nbsp;See&nbsp;documentation&nbsp;for<br>
+the&nbsp;C&nbsp;library&nbsp;strftime&nbsp;function.</tt></dd></dl>
+ <dl><dt><a name="-thread_time"><strong>thread_time</strong></a>(...)</dt><dd><tt><a href="#-thread_time">thread_time</a>()&nbsp;-&gt;&nbsp;float<br>
+&nbsp;<br>
+Thread&nbsp;time&nbsp;for&nbsp;profiling:&nbsp;sum&nbsp;of&nbsp;the&nbsp;kernel&nbsp;and&nbsp;user-space&nbsp;CPU&nbsp;time.</tt></dd></dl>
+ <dl><dt><a name="-thread_time_ns"><strong>thread_time_ns</strong></a>(...)</dt><dd><tt><a href="#-thread_time">thread_time</a>()&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Thread&nbsp;time&nbsp;for&nbsp;profiling&nbsp;as&nbsp;nanoseconds:<br>
+sum&nbsp;of&nbsp;the&nbsp;kernel&nbsp;and&nbsp;user-space&nbsp;CPU&nbsp;time.</tt></dd></dl>
+ <dl><dt><a name="-time_ns"><strong>time_ns</strong></a>(...)</dt><dd><tt><a href="#-time_ns">time_ns</a>()&nbsp;-&gt;&nbsp;int<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;current&nbsp;time&nbsp;in&nbsp;nanoseconds&nbsp;since&nbsp;the&nbsp;Epoch.</tt></dd></dl>
+ <dl><dt><a name="-w"><strong>w</strong></a>()</dt></dl>
+ <dl><dt><a name="-win_version"><strong>win_version</strong></a>()</dt></dl>
+ <dl><dt><a name="-ww"><strong>ww</strong></a>()</dt></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>ABOVE_NORMAL_PRIORITY_CLASS</strong> = 32768<br>
+<strong>BELOW_NORMAL_PRIORITY_CLASS</strong> = 16384<br>
+<strong>CREATE_BREAKAWAY_FROM_JOB</strong> = 16777216<br>
+<strong>CREATE_DEFAULT_ERROR_MODE</strong> = 67108864<br>
+<strong>CREATE_NEW_CONSOLE</strong> = 16<br>
+<strong>CREATE_NEW_PROCESS_GROUP</strong> = 512<br>
+<strong>CREATE_NO_WINDOW</strong> = 134217728<br>
+<strong>DETACHED_PROCESS</strong> = 8<br>
+<strong>DEVNULL</strong> = -3<br>
+<strong>HIGH_PRIORITY_CLASS</strong> = 128<br>
+<strong>IDLE_PRIORITY_CLASS</strong> = 64<br>
+<strong>NORMAL_PRIORITY_CLASS</strong> = 32<br>
+<strong>PIPE</strong> = -1<br>
+<strong>REALTIME_PRIORITY_CLASS</strong> = 256<br>
+<strong>STARTF_USESHOWWINDOW</strong> = 1<br>
+<strong>STARTF_USESTDHANDLES</strong> = 256<br>
+<strong>STDOUT</strong> = -2<br>
+<strong>STD_ERROR_HANDLE</strong> = 4294967284<br>
+<strong>STD_INPUT_HANDLE</strong> = 4294967286<br>
+<strong>STD_OUTPUT_HANDLE</strong> = 4294967285<br>
+<strong>SW_HIDE</strong> = 0<br>
+<strong>altzone</strong> = -7200<br>
+<strong>daylight</strong> = 1<br>
+<strong>main_dir</strong> = r'C:\Users\matthijs\AppData\Local\Programs\Python\Python37\lib'<br>
+<strong>timezone</strong> = -3600<br>
+<strong>tzname</strong> = ('West-Europa (standaardtijd)', 'West-Europa (zomertijd)')<br>
+<strong>working</strong> = True</td></tr></table>
+</body></html>

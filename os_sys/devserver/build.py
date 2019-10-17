@@ -2,12 +2,7 @@ try:
     from . import server
 except:
     import server
-import __main__ as ma
-firs = True
-try:
-    ma.firs
-except:
-    ma.firs = True
+
 __all__ = ['path', 'config', 'HTTPResponse']
 def paths(port=9999, *programs):
 
@@ -16,18 +11,18 @@ def config(*programs, port=9999, host='127.0.0.1'):
     global ma
     global firs
     import sys
-    arg = sys.argv[-1]
-    if __name__ != 'wiuefhsesdkfhdoshfiosduv':
-        if firs and ma.firs:
-            server.run_(port, host, *programs)
-            firs = False
-            ma.firs = False
+    arg = sys.argv
+    if 'runserver' in arg:
+        server.run_(port, host, *programs)
+        
     else:
         print('typ runserver to run the server')
 def HTTPResponse(response):
+    """the response function"""
+    #for future use
     return response
 def path(program, name, *args, **kwargs):
-    return name, program
+    return (name, program)
 
 def all_dict(dictory, exceptions=None, file_types=None, maps=False, files=True, print_data=False):
     import os
@@ -124,10 +119,9 @@ def run_local(path='.', port=9999, host='127.0.0.1'):
 
                 data = open(path).read()
 
-            def func(request):
+            exec(f"""def func(request):
 
-                return data
-
+    return {data}"""
             _raw.append((_path.replace('\\', '/'), func))
 
         except Exception as ex:
